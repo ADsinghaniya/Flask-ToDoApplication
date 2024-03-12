@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaam Karo</title>
+    <link rel="stylesheet" href="static/file1.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <nav class="leftNav"> <span class="logo"> Kaam Karo</span> </nav>
+        <nav class="centerNav"> <span class="inp"> <input class="inp1" type="text" placeholder="ctr. + K"></span></nav>
+        <nav class="rightNav">
+            <ul>
+                <li><a href="home"> Home</a></li>
+                <li><a href="about"> About</a></li>
+                <li><a href="contact"> Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <hr class="endnav">
+    <div class="container">
+        <div class="uppercontainer">
+            <div class="upperhead">
+                <h2>TO - DO</h2>
+            </div>
+            <div class="formhead">
+                <form method="POST" action="{{url_for('form_submit')}}">
+                    <input type="text" name="inp_title" id="" class="tit" placeholder="Title" minlength="3" required>
+                    <input type="text" name="inp_task" id="" class="task" placeholder="Task" minlength="1" required>
+                    <input type="date" name="inp_date" id="" class="date" placeholder="Date Time" minlength="1" required>
+
+                    <button type="submit" class="btnsub">Add Task</button>
+                </form>
+            </div>
+        </div>
+        <div class="lowercontainer">
+            <div class="upperhead">
+                <h2>ADDED TASK</h2>
+            </div>
+            <div class="dataDisp">
+                <div class="leftDataDisp">This is Python Course</div>
+                <div class="rightDataDisp">12/12/2024</div>
+            </div>
+            <div class="dataDisp">
+                <div class="leftDataDisp">This is Python Course</div>
+                <div class="rightDataDisp">12/12/2024</div>
+            </div>
+            <div class="dataDisp">
+                <div class="leftDataDisp">This is Python Course</div>
+                <div class="rightDataDisp">12/12/2024</div>
+            </div>
+        </div>
+    </div>
+    <footer class="foot">
+        <footer class="leftFoot">All Copyrights  Reserved by AlphaCorporations</footer>
+        <footer class="rightFoot"><button class="btnFoot">Help</button></footer>
+    </footer>
+
+
+</body>
+
+</html>
